@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+/*** Loader ***/
+
+.loader {
+    border: 3px solid #b3b3b3;
+    border-radius: 50%;
+    border-top: 3px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
