@@ -5,8 +5,7 @@ const player = videojs('vid1',
         "preload": "auto",
         "youtube": {
             "modestbranding": 1,
-            "iv_load_policy": 3,
-            "origin": 'https://www.faadmotivation.ml',
+            "iv_load_policy": 3
         }
     });
 
@@ -45,6 +44,5 @@ player.on('ended', () => {
 
 function setVideo(videoId) {
     player.src({type: 'video/youtube', src: 'https://www.youtube.com/watch?v=' + videoId});
-    player.poster('https://img.youtube.com/vi/' + videoId + '/maxresdefault.jpg');
     player.play();
 }

@@ -5,7 +5,7 @@ function postNewVideo(url) {
         url: 'https://us-central1-faad-motivation.cloudfunctions.net/api/videos',
         type: 'POST',
         data: {url: url},
-        success: function (data) {
+        success: function () {
             setErrorMsg('');
             $('#url').val('');
         },
