@@ -4,40 +4,8 @@ body, html, main {
     overflow: hidden;
 }
 
-iframe {
+#vid1 {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: black;
-}
-
-.loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    border: 3px solid #b3b3b3;
-    border-radius: 50%;
-    border-top: 3px solid #ffffff;
-    width: 40px;
-    height: 40px;
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }

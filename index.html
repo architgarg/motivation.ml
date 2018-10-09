@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
+  <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
 </head>
 <body>
 <main>
-    <iframe id="video-iframe" frameborder="0" allowfullscreen></iframe>
-    <div class="loader"></div>
+  <video
+      id="vid1"
+      class="video-js"
+      controls
+      poster="https://static.wixstatic.com/media/1d8b07_4b2b133d436e44f69180c331a0e9f306~mv2.jpg"
+  >
+  </video>
 </main>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+<script src="./youtube.min.js"></script>
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </body>
