@@ -1,0 +1,48 @@
+body, h1, input, .error {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #3d3d3d;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    background-color: #3d3d3d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+div {
+    background-color: #fafafa;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error {
+    color: #e60000;
+    height: 60px;
+    font-size: 16px;
+}
