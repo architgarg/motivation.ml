@@ -1,18 +1,17 @@
-const player = videojs('vid1',
-    {
-        "controls": false,
-        "autoplay": true,
-        "preload": "auto",
-        "youtube": {
-            "modestbranding": 1,
-            "iv_load_policy": 3
-        }
-    });
+const player = videojs('vid1', {
+    "controls": false,
+    "autoplay": true,
+    "preload": "auto",
+    "youtube": {
+        "modestbranding": 1,
+        "iv_load_policy": 3
+    }
+}, () => getVideos());
 
 let key = 0;
 let videos = [];
 
-$(function () {
+function getVideos() {
     $.ajax({
         url: 'https://us-central1-faad-motivation.cloudfunctions.net/api/videos',
         type: 'GET',
@@ -27,10 +26,9 @@ $(function () {
         },
         error: function (error) {
             setVideo('7Km0uAOsN8E');
-            console.log('Error ', error);
         }
     });
-});
+}
 
 player.on('ended', () => {
     key = key + 1;
